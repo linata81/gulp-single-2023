@@ -1,0 +1,34 @@
+.tabs {
+  &__nav {
+    display: flex;
+  }
+  &__nav-btn {
+    padding: 5px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    border-right: 1px solid #ddd;
+    background-color: rgb(244, 243, 243);
+  }
+  &__nav-btn.active {
+    border-color: #F05718;
+    color: #fff;
+    background-color: #F05718;
+  }
+  &__nav-btn:hover {
+    border-color: rgb(209, 205, 205);
+    background-color: rgb(209, 205, 205);
+    color: black;
+  }
+  &__content {
+    width: 40%;
+    padding: 30px;
+    border-top: 1px solid #ddd;
+  }
+  &__item {
+    display: none;
+  }
+  &__item.active {
+    display: block;
+  }
+}

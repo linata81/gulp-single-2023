@@ -1,0 +1,36 @@
+.container-sm {
+  width: 960px;
+  margin: 0 auto;
+}
+.page__text {
+  padding: 100px;
+}
+.page__images {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.page__image {
+  position: relative;
+  padding: 0px 0px 90% 0px;
+  background: url("@img/loading.gif") center / 100px no-repeat;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+.page__map {
+  padding: 0px 0px 50% 0px;
+  position: relative;
+  background: url("@img/loading.gif") center / 200px no-repeat;
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

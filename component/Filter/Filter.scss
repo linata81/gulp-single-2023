@@ -1,0 +1,74 @@
+$orange: #ffa728;
+$red: #e66c6e;
+$green: #a7d6bb;
+$blue:#1c4961;
+
+.animals {
+  padding: 20px;
+  background-color: #faebd7;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.animals__button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  position: relative;
+  &:active {
+    bottom: -1px;
+  }
+}
+.animals__button-all {
+  background-color: $orange;
+}
+.animals__button-cat {
+  background-color: $green;
+}
+.animals__button-dog {
+  background-color: $red;
+}
+.animals__button-bird {
+  background-color: $blue;
+}
+.animals__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  width: calc(33.33333333% - 72px);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+.cat {
+  background-color: $green;
+}
+.dog {
+  background-color: $red;
+}
+.bird {
+  background-color: $blue;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: $breakpoint768) {
+  .card {
+    width: calc(50% - 72px);
+  }
+}

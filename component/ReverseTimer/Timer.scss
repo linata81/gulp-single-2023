@@ -1,0 +1,46 @@
+.promotion__timer {
+  width: 374px;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(249,254,126,.25);
+  border: 1px solid rgba(171, 175, 64, 0.25);
+  margin: 20px;
+}
+.promotion__timer .title {
+  font-size: 28px;
+  text-align: center;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px 20px 20px;
+}
+.timer__block {
+    flex: 0 1 70px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 8px;
+    span {
+      font-size: 40px;
+      font-weight: 700
+    }
+}
+@media screen and (max-width: $breakpoint480) {
+  .promotion__timer {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timer__block {
+    flex: 0 1 50px;
+    span {
+      font-size: 35px;
+    }
+  }
+  .promotion__timer .title {
+    font-size: 24px;
+  }
+}

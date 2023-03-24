@@ -1,0 +1,25 @@
+.section {
+  height: 75vh;
+}
+.to-top {
+  background: #F05718;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .6s;
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.to-top.active {
+  pointer-events: auto;
+  opacity: 1;
+}

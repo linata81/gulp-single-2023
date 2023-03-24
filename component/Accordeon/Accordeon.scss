@@ -1,0 +1,40 @@
+.accordeon {
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  &__header {
+    user-select: none;
+    background: #aaa;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    &:hover {
+      color: #ddd;
+      svg {
+        fill:#ddd;
+      }
+    }
+    svg{
+      transition: transform 400ms ease-in-out;
+    }
+  }
+  &__header.opened {
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+  &__body {
+    max-height: 0;
+    background-color: rgb(249, 249, 249);
+    overflow: hidden;
+    transition: max-height .4s ease-in;
+    p {
+      padding: 10px 20px;
+    }
+  }
+}

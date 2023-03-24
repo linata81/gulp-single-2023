@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  height: 50px;
+  background-color: #ffaaff;
+}
+
+.footer {
+  height: 50px;
+  background-color: #ccaa00;
+}
